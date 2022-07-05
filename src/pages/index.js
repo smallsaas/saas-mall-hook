@@ -1,8 +1,8 @@
 import React from 'react';
 
-import GetApiDataDemo from './getApiDataDemo'
+import TestMallOrderApi from './testMallOrderApi'
 
 export default function Index(props) {
 
-  return (<GetApiDataDemo/>)
+  return (<TestMallOrderApi/>)
 }
