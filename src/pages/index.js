@@ -1,5 +1,8 @@
 import React from 'react';
 
+import GetApiDataDemo from './getApiDataDemo'
+
 export default function Index(props) {
-  rerurn (<div></div>)
+
+  return (<GetApiDataDemo/>)
 }
