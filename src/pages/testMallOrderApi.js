@@ -7,25 +7,24 @@ export default function (props) {
     const [ list, setList ] = useState([]);
     const [ detail, setDetail ] = useState({});
 
-    //获取列表
     useEffect(_=>{
         getOrderList()
     })
 
-    //获取详情
+    //获取订单列表
     function getOrderList() {
         const list =  query()
         setList(list)
      }
 
-    //获取详情
+    //获取订单详情
     function getOrderDetail() {
        const id = 1
        const detailData =  get(id)
        setDetail(detailData)
     }
 
-    //获取新增订单
+    //新增订单
     function add() {
         const postBody = {
             name:'',
@@ -35,7 +34,7 @@ export default function (props) {
         console.log('新增订单 = ', postResp)
     }
 
-    //获取新增订单
+    //修改订单
     function edit() {
         const id = 1
          const putBody = {
